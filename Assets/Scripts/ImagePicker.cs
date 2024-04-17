@@ -11,20 +11,9 @@ public class ImagePicker : MonoBehaviour
     {
         if (path != "")
         {
-            Texture2D texture = NativeGallery.LoadImageAtPath(path);
-            if (texture != null)
-            {
-                Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2());
-                _image.sprite = sprite;
-
-            }
-            else
-                Debug.Log("texture = null");
+            GetImageFromGallery.SetImage(path, _image);
         }
         else
             Debug.Log("Path is empty");
     }
-
-
-
 }

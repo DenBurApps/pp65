@@ -3322,9 +3322,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1661263141121437439}
-        m_TargetAssemblyTypeName: GetImageFromGallery, Assembly-CSharp
-        m_MethodName: PickImagePath
+      - m_Target: {fileID: 4867895375361181582}
+        m_TargetAssemblyTypeName: EditOrder, Assembly-CSharp
+        m_MethodName: PickImage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3657,7 +3657,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3695075946157288057}
-  - component: {fileID: 1661263141121437439}
   - component: {fileID: 4867895375361181582}
   - component: {fileID: 7877174054024923966}
   m_Layer: 5
@@ -3693,19 +3692,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1661263141121437439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6017465471349534331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4921c0312736d8b4ab54424830a2e85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageGetterGM: {fileID: 6017465471349534331}
 --- !u!114 &4867895375361181582
 MonoBehaviour:
   m_ObjectHideFlags: 0

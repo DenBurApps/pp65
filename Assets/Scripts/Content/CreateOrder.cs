@@ -122,7 +122,10 @@ public class CreateOrder : MonoBehaviour, ICanChangeStatus, ICanAddNewImage
 
     public ImagePicker imagePickerPrefab;
     public Transform imagePickerPlace;
-
+    public void PickImage()
+    {
+        GetImageFromGallery.PickImage(GetImage);
+    }
     public void GetImage(string path)
     {
         order.photoes.Add(path);

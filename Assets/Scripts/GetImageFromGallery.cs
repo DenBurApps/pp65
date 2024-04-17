@@ -1,23 +1,49 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GetImageFromGallery : MonoBehaviour
+public static class GetImageFromGallery
 {
-    [SerializeField] private GameObject imageGetterGM;
-    private ICanAddNewImage imageGetter;
-    private void Awake()
+    private static string _path = "";
+
+    public static bool SetImage(string path, Image image)
     {
-        imageGetter = imageGetterGM.GetComponent<ICanAddNewImage>();
+        Texture2D texture = NativeGallery.LoadImageAtPath(path, -1);
+        if (texture != null)
+        {
+            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2());
+            image.sprite = sprite;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    public void PickImagePath()
+
+    public static void PickImage(Action<string> ImagePicked)
     {
         NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
         {
-            Debug.Log("path is - " + path);
-
+            Debug.Log("Image path: " + path);
             if (path != null)
-                imageGetter.GetImage(path);
+            {
+                Texture2D texture = NativeGallery.LoadImageAtPath(path, -1);
+                if (texture == null)
+                {
+                    Debug.Log("Couldn't load texture from " + path);
+                    _path = "";
+                    return;
+                }
+                _path = path;
+            }
+            else
+            {
+                _path = "";
+            }
+            ImagePicked?.Invoke(_path);
         });
     }
 }
