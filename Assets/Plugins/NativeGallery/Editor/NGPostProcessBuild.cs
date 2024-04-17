@@ -86,67 +86,67 @@ namespace NativeGalleryNamespace
 		}
 	}
 
-	public class NGPostProcessBuild
-	{
-#if UNITY_IOS
-		[PostProcessBuild( 1 )]
-		public static void OnPostprocessBuild( BuildTarget target, string buildPath )
-		{
-			if( !Settings.Instance.AutomatedSetup )
-				return;
+//	public class NGPostProcessBuild
+//	{
+//#if UNITY_IOS
+//		[PostProcessBuild( 1 )]
+//		public static void OnPostprocessBuild( BuildTarget target, string buildPath )
+//		{
+//			if( !Settings.Instance.AutomatedSetup )
+//				return;
 
-			if( target == BuildTarget.iOS )
-			{
-				string pbxProjectPath = PBXProject.GetPBXProjectPath( buildPath );
-				string plistPath = Path.Combine( buildPath, "Info.plist" );
+//			if( target == BuildTarget.iOS )
+//			{
+//				string pbxProjectPath = PBXProject.GetPBXProjectPath( buildPath );
+//				string plistPath = Path.Combine( buildPath, "Info.plist" );
 
-				PBXProject pbxProject = new PBXProject();
-				pbxProject.ReadFromFile( pbxProjectPath );
+//				PBXProject pbxProject = new PBXProject();
+//				pbxProject.ReadFromFile( pbxProjectPath );
 
-#if UNITY_2019_3_OR_NEWER
-				string targetGUID = pbxProject.GetUnityFrameworkTargetGuid();
-#else
-				string targetGUID = pbxProject.TargetGuidByName( PBXProject.GetUnityTargetName() );
-#endif
+//#if UNITY_2019_3_OR_NEWER
+//				string targetGUID = pbxProject.GetUnityFrameworkTargetGuid();
+//#else
+//				string targetGUID = pbxProject.TargetGuidByName( PBXProject.GetUnityTargetName() );
+//#endif
 
-				// Minimum supported iOS version on Unity 2018.1 and later is 8.0
-#if !UNITY_2018_1_OR_NEWER
-				if( !Settings.Instance.MinimumiOSTarget8OrAbove )
-				{
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework Photos" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework PhotosUI" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework AssetsLibrary" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework MobileCoreServices" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework ImageIO" );
-				}
-				else
-#endif
-				{
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework PhotosUI" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework Photos" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework MobileCoreServices" );
-					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework ImageIO" );
-				}
+//				// Minimum supported iOS version on Unity 2018.1 and later is 8.0
+//#if !UNITY_2018_1_OR_NEWER
+//				if( !Settings.Instance.MinimumiOSTarget8OrAbove )
+//				{
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework Photos" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework PhotosUI" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework AssetsLibrary" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework MobileCoreServices" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework ImageIO" );
+//				}
+//				else
+//#endif
+//				{
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-weak_framework PhotosUI" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework Photos" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework MobileCoreServices" );
+//					pbxProject.AddBuildProperty( targetGUID, "OTHER_LDFLAGS", "-framework ImageIO" );
+//				}
 
-				pbxProject.RemoveFrameworkFromProject( targetGUID, "Photos.framework" );
-				pbxProject.RemoveFrameworkFromProject( targetGUID, "PhotosUI.framework" );
+//				pbxProject.RemoveFrameworkFromProject( targetGUID, "Photos.framework" );
+//				pbxProject.RemoveFrameworkFromProject( targetGUID, "PhotosUI.framework" );
 
-				File.WriteAllText( pbxProjectPath, pbxProject.WriteToString() );
+//				File.WriteAllText( pbxProjectPath, pbxProject.WriteToString() );
 
-				PlistDocument plist = new PlistDocument();
-				plist.ReadFromString( File.ReadAllText( plistPath ) );
+//				PlistDocument plist = new PlistDocument();
+//				plist.ReadFromString( File.ReadAllText( plistPath ) );
 
-				PlistElementDict rootDict = plist.root;
-				if( !string.IsNullOrEmpty( Settings.Instance.PhotoLibraryUsageDescription ) )
-					rootDict.SetString( "NSPhotoLibraryUsageDescription", Settings.Instance.PhotoLibraryUsageDescription );
-				if( !string.IsNullOrEmpty( Settings.Instance.PhotoLibraryAdditionsUsageDescription ) )
-					rootDict.SetString( "NSPhotoLibraryAddUsageDescription", Settings.Instance.PhotoLibraryAdditionsUsageDescription );
-				if( Settings.Instance.DontAskLimitedPhotosPermissionAutomaticallyOnIos14 )
-					rootDict.SetBoolean( "PHPhotoLibraryPreventAutomaticLimitedAccessAlert", true );
+//				PlistElementDict rootDict = plist.root;
+//				if( !string.IsNullOrEmpty( Settings.Instance.PhotoLibraryUsageDescription ) )
+//					rootDict.SetString( "NSPhotoLibraryUsageDescription", Settings.Instance.PhotoLibraryUsageDescription );
+//				if( !string.IsNullOrEmpty( Settings.Instance.PhotoLibraryAdditionsUsageDescription ) )
+//					rootDict.SetString( "NSPhotoLibraryAddUsageDescription", Settings.Instance.PhotoLibraryAdditionsUsageDescription );
+//				if( Settings.Instance.DontAskLimitedPhotosPermissionAutomaticallyOnIos14 )
+//					rootDict.SetBoolean( "PHPhotoLibraryPreventAutomaticLimitedAccessAlert", true );
 
-				File.WriteAllText( plistPath, plist.WriteToString() );
-			}
-		}
-#endif
-	}
+//				File.WriteAllText( plistPath, plist.WriteToString() );
+//			}
+//		}
+//#endif
+//	}
 }

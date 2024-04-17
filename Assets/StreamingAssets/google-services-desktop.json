@@ -1,26 +1,28 @@
 {
   "project_info": {
-    "project_number": "132545250384",
-    "project_id": "pp65-65a8a",
-    "storage_bucket": "pp65-65a8a.appspot.com"
+    "project_number": "49524375516",
+    "project_id": "frbspp65",
+    "storage_bucket": "frbspp65.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:132545250384:android:ea664e5f4434d9a3a3fd55",
+        "mobilesdk_app_id": "1:49524375516:ios:898a39205868510df1d919",
         "android_client_info": {
-          "package_name": "com.pp65"
+          "package_name": "com.fixitGArg.ManGpp65"
         }
       },
-      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA254Guv0IgPOd3VJtcFtcRENrEFrWcXvI"
+          "current_key": "AIzaSyAtF33HJ857hXGxRsOHCIzb-sD22Fikd_I"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 0
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "status": 1
         }
       }
     }
