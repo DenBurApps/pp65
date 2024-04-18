@@ -234,10 +234,10 @@ RectTransform:
   - {fileID: 949505085}
   m_Father: {fileID: 2018792279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -397.8636}
-  m_SizeDelta: {x: 1035.171, y: 182.68604}
+  m_AnchorMin: {x: 0.039923992, y: 0.34772453}
+  m_AnchorMax: {x: 0.96007603, y: 0.5913059}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9422222
 MonoBehaviour:
@@ -454,10 +454,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2018792279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -210.349}
-  m_SizeDelta: {x: 268.945, y: 81.81995}
+  m_AnchorMin: {x: 0.38046888, y: 0.66498804}
+  m_AnchorMax: {x: 0.6195311, y: 0.7740813}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39257742
 MonoBehaviour:
@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 83683246}
   - component: {fileID: 83683248}
   - component: {fileID: 83683247}
+  - component: {fileID: 83683249}
   m_Layer: 5
   m_Name: EmptyActive
   m_TagString: Untagged
@@ -666,10 +667,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1233415415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 226}
-  m_SizeDelta: {x: 942, y: 967}
+  m_AnchorMin: {x: 0.08133333, y: 0.37099645}
+  m_AnchorMax: {x: 0.91866666, y: 0.9445433}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83683247
 MonoBehaviour:
@@ -709,6 +710,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83683245}
   m_CullTransparentMesh: 1
+--- !u!114 &83683249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83683245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1
 --- !u!1 &84044734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,6 +1777,7 @@ GameObject:
   - component: {fileID: 269637900}
   - component: {fileID: 269637899}
   - component: {fileID: 269637898}
+  - component: {fileID: 269637901}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1784,10 +1800,10 @@ RectTransform:
   - {fileID: 459048875}
   m_Father: {fileID: 2018792279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 456.9921, y: -608.8591}
-  m_SizeDelta: {x: 121.186, y: 123.11597}
+  m_AnchorMin: {x: 0.85235476, y: 0.106110595}
+  m_AnchorMax: {x: 0.9600756, y: 0.27026522}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269637898
 MonoBehaviour:
@@ -1883,6 +1899,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269637896}
   m_CullTransparentMesh: 1
+--- !u!114 &269637901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269637896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1
 --- !u!1 &283111150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,10 +2727,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1233415415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -562, y: 0}
-  m_SizeDelta: {x: 1124, y: 290}
+  m_AnchorMin: {x: 0.00044444445, y: 0.82799524}
+  m_AnchorMax: {x: 0.9995555, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 290}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &377676725
 MonoBehaviour:
@@ -2766,10 +2796,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1631895894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: 0}
-  m_SizeDelta: {x: 123.22, y: 50}
+  m_AnchorMin: {x: 0.15578939, y: 0.2915468}
+  m_AnchorMax: {x: 0.33504483, y: 0.7084532}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390303955
 MonoBehaviour:
@@ -3048,10 +3078,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 269637897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.20293592, y: 0.20759276}
+  m_AnchorMax: {x: 0.79706407, y: 0.7924072}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 72, y: 72}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459048876
 MonoBehaviour:
@@ -7506,10 +7536,10 @@ RectTransform:
   - {fileID: 1233415415}
   m_Father: {fileID: 206686652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.6921182}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1125, y: -750}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1218085136
 MonoBehaviour:
@@ -9023,6 +9053,7 @@ GameObject:
   - component: {fileID: 1610381166}
   - component: {fileID: 1610381168}
   - component: {fileID: 1610381167}
+  - component: {fileID: 1610381169}
   m_Layer: 5
   m_Name: EmptyCompleted
   m_TagString: Untagged
@@ -9044,10 +9075,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1233415415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 226}
-  m_SizeDelta: {x: 942, y: 967}
+  m_AnchorMin: {x: 0.08133333, y: 0.37099645}
+  m_AnchorMax: {x: 0.91866666, y: 0.9445433}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610381167
 MonoBehaviour:
@@ -9087,6 +9118,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610381165}
   m_CullTransparentMesh: 1
+--- !u!114 &1610381169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610381165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1
 --- !u!1 &1631895893
 GameObject:
   m_ObjectHideFlags: 0
@@ -9123,10 +9168,10 @@ RectTransform:
   - {fileID: 1960951920}
   m_Father: {fileID: 2018792279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -353.59296}
-  m_SizeDelta: {x: 687.399, y: 119.931}
+  m_AnchorMin: {x: 0.19448934, y: -0.051411297}
+  m_AnchorMax: {x: 0.80551064, y: 0.10849675}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -0.000030517578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631895895
 MonoBehaviour:
@@ -9417,7 +9462,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Please read these terms and conditions carefully before using Our Service.
 
-    
+
 
     Interpretation
     and Definitions
@@ -9429,180 +9474,179 @@ MonoBehaviour:
     definitions shall have the same meaning regardless of whether they appear in
     singular or in plural.
 
-    
+
 
     Definitions
 
-    For the purposes of these
-    Terms and Conditions:
+    For the purposes of these Terms
+    and Conditions:
 
-    
 
-    Application means the software program provided
-    by the Company downloaded by You on any electronic device, named FixIt Garage
-    Manager
 
-    
+    Application means the software program provided by the
+    Company downloaded by You on any electronic device, named FixIt Garage Manager
 
-    Application Store means the digital distribution service
-    operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google
-    Play Store) in which the Application has been downloaded.
 
-    
 
-    Affiliate
-    means an entity that controls, is controlled by or is under common control with
-    a party, where "control" means ownership of 50% or more of the shares, equity
-    interest or other securities entitled to vote for election of directors or other
-    managing authority.
+    Application
+    Store means the digital distribution service operated and developed by Apple
+    Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application
+    has been downloaded.
 
-    
 
-    Country refers to: Arkansas, United States
 
-    
+    Affiliate means an entity that controls, is controlled
+    by or is under common control with a party, where "control" means ownership of
+    50% or more of the shares, equity interest or other securities entitled to vote
+    for election of directors or other managing authority.
 
-    Company
-    (referred to as either "the Company", "We", "Us" or "Our" in this Agreement)
-    refers to FixIt Garage Manager.
 
-    
 
-    Device means any device that can
-    access the Service such as a computer, a cellphone or a digital tablet.
+    Country refers
+    to: Arkansas, United States
 
-    
 
-    Service
-    refers to the Application.
 
-    
+    Company (referred to as either "the Company",
+    "We", "Us" or "Our" in this Agreement) refers to FixIt Garage Manager.
 
-    Terms and Conditions (also referred as
-    "Terms") mean these Terms and Conditions that form the entire agreement between
-    You and the Company regarding the use of the Service. This Terms and Conditions
-    agreement has been created with the help of the Free Terms and Conditions Generator.
 
-    
 
-    Third-party
-    Social Media Service means any services or content (including data, information,
-    products or services) provided by a third-party that may be displayed, included
-    or made available by the Service.
+    Device
+    means any device that can access the Service such as a computer, a cellphone
+    or a digital tablet.
 
-    
 
-    You means the individual accessing
-    or using the Service, or the company, or other legal entity on behalf of which
-    such individual is accessing or using the Service, as applicable.
 
-    
+    Service refers to the Application.
+
+
+
+    Terms and
+    Conditions (also referred as "Terms") mean these Terms and Conditions that form
+    the entire agreement between You and the Company regarding the use of the Service.
+    This Terms and Conditions agreement has been created with the help of the Free
+    Terms and Conditions Generator.
+
+
+
+    Third-party Social Media Service means
+    any services or content (including data, information, products or services) provided
+    by a third-party that may be displayed, included or made available by the Service.
+
+
+
+    You
+    means the individual accessing or using the Service, or the company, or other
+    legal entity on behalf of which such individual is accessing or using the Service,
+    as applicable.
+
+
 
     Acknowledgment
 
-    These
-    are the Terms and Conditions governing the use of this Service and the agreement
-    that operates between You and the Company. These Terms and Conditions set out
-    the rights and obligations of all users regarding the use of the Service.
+    These are the Terms and Conditions
+    governing the use of this Service and the agreement that operates between You
+    and the Company. These Terms and Conditions set out the rights and obligations
+    of all users regarding the use of the Service.
 
-    
 
-    Your
-    access to and use of the Service is conditioned on Your acceptance of and compliance
-    with these Terms and Conditions. These Terms and Conditions apply to all visitors,
-    users and others who access or use the Service.
 
-    
+    Your access to and use
+    of the Service is conditioned on Your acceptance of and compliance with these
+    Terms and Conditions. These Terms and Conditions apply to all visitors, users
+    and others who access or use the Service.
 
-    By accessing or
-    using the Service You agree to be bound by these Terms and Conditions. If You
-    disagree with any part of these Terms and Conditions then You may not access
-    the Service.
 
-    
 
-    You represent that you are over the age of 18. The
-    Company does not permit those under 18 to use the Service.
+    By accessing or using the Service
+    You agree to be bound by these Terms and Conditions. If You disagree with any
+    part of these Terms and Conditions then You may not access the Service.
 
-    
 
-    Your
-    access to and use of the Service is also conditioned on Your acceptance of and
-    compliance with the Privacy Policy of the Company. Our Privacy Policy describes
-    Our policies and procedures on the collection, use and disclosure of Your personal
-    information when You use the Application or the Website and tells You about Your
-    privacy rights and how the law protects You. Please read Our Privacy Policy carefully
-    before using Our Service.
 
-    
+    You
+    represent that you are over the age of 18. The Company does not permit those
+    under 18 to use the Service.
 
-    Links to Other Websites
 
-    Our Service
-    may contain links to third-party web sites or services that are not owned or
-    controlled by the Company.
 
-    
+    Your access to and use of the Service is
+    also conditioned on Your acceptance of and compliance with the Privacy Policy
+    of the Company. Our Privacy Policy describes Our policies and procedures on the
+    collection, use and disclosure of Your personal information when You use the
+    Application or the Website and tells You about Your privacy rights and how the
+    law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
-    The Company has no control over, and
-    assumes no responsibility for, the content, privacy policies, or practices of
-    any third party web sites or services. You further acknowledge and agree that
-    the Company shall not be responsible or liable, directly or indirectly, for any
-    damage or loss caused or alleged to be caused by or in connection with the use
-    of or reliance on any such content, goods or services available on or through
-    any such web sites or services.
 
-    
 
-    We strongly advise You to read the
-    terms and conditions and privacy policies of any third-party web sites or services
-    that You visit.
+    Links
+    to Other Websites
 
-    
+    Our Service may contain links to third-party web sites
+    or services that are not owned or controlled by the Company.
+
+
+
+    The Company
+    has no control over, and assumes no responsibility for, the content, privacy
+    policies, or practices of any third party web sites or services. You further
+    acknowledge and agree that the Company shall not be responsible or liable, directly
+    or indirectly, for any damage or loss caused or alleged to be caused by or in
+    connection with the use of or reliance on any such content, goods or services
+    available on or through any such web sites or services.
+
+
+
+    We strongly advise
+    You to read the terms and conditions and privacy policies of any third-party
+    web sites or services that You visit.
+
+
 
     Termination
 
-    We may terminate or suspend Your
-    access immediately, without prior notice or liability, for any reason whatsoever,
-    including without limitation if You breach these Terms and Conditions.
+    We may terminate
+    or suspend Your access immediately, without prior notice or liability, for any
+    reason whatsoever, including without limitation if You breach these Terms and
+    Conditions.
 
-    
 
-    Upon
-    termination, Your right to use the Service will cease immediately.
 
-    
+    Upon termination, Your right to use the Service will cease
+    immediately.
 
-    Limitation
-    of Liability
 
-    Notwithstanding any damages that You might incur, the entire
-    liability of the Company and any of its suppliers under any provision of this
-    Terms and Your exclusive remedy for all of the foregoing shall be limited to
-    the amount actually paid by You through the Service or 100 USD if You haven''t
-    purchased anything through the Service.
 
-    
+    Limitation of Liability
 
-    To the maximum extent permitted
-    by applicable law, in no event shall the Company or its suppliers be liable for
-    any special, incidental, indirect, or consequential damages whatsoever (including,
-    but not limited to, damages for loss of profits, loss of data or other information,
-    for business interruption, for personal injury, loss of privacy arising out of
-    or in any way related to the use of or inability to use the Service, third-party
-    software and/or third-party hardware used with the Service, or otherwise in connection
-    with any provision of this Terms), even if the Company or any supplier has been
-    advised of the possibility of such damages and even if the remedy fails of its
-    essential purpose.
+    Notwithstanding any damages
+    that You might incur, the entire liability of the Company and any of its suppliers
+    under any provision of this Terms and Your exclusive remedy for all of the foregoing
+    shall be limited to the amount actually paid by You through the Service or 100
+    USD if You haven''t purchased anything through the Service.
 
-    
+
+
+    To the maximum
+    extent permitted by applicable law, in no event shall the Company or its suppliers
+    be liable for any special, incidental, indirect, or consequential damages whatsoever
+    (including, but not limited to, damages for loss of profits, loss of data or
+    other information, for business interruption, for personal injury, loss of privacy
+    arising out of or in any way related to the use of or inability to use the Service,
+    third-party software and/or third-party hardware used with the Service, or otherwise
+    in connection with any provision of this Terms), even if the Company or any supplier
+    has been advised of the possibility of such damages and even if the remedy fails
+    of its essential purpose.
+
+
 
     Some states do not allow the exclusion of implied
     warranties or limitation of liability for incidental or consequential damages,
     which means that some of the above limitations may not apply. In these states,
     each party''s liability will be limited to the greatest extent permitted by law.
 
-    
+
 
     "AS
     IS" and "AS AVAILABLE" Disclaimer
@@ -9622,19 +9666,19 @@ MonoBehaviour:
     interruption, meet any performance or reliability standards or be error free
     or that any errors or defects can or will be corrected.
 
-    
 
-    Without
-    limiting the foregoing, neither the Company nor any of the company''s provider
-    makes any representation or warranty of any kind, express or implied: (i) as
-    to the operation or availability of the Service, or the information, content,
-    and materials or products included thereon; (ii) that the Service will be uninterrupted
-    or error-free; (iii) as to the accuracy, reliability, or currency of any information
-    or content provided through the Service; or (iv) that the Service, its servers,
-    the content, or e-mails sent from or on behalf of the Company are free of viruses,
-    scripts, trojan horses, worms, malware, timebombs or other harmful components.
 
-    
+    Without limiting
+    the foregoing, neither the Company nor any of the company''s provider makes any
+    representation or warranty of any kind, express or implied: (i) as to the operation
+    or availability of the Service, or the information, content, and materials or
+    products included thereon; (ii) that the Service will be uninterrupted or error-free;
+    (iii) as to the accuracy, reliability, or currency of any information or content
+    provided through the Service; or (iv) that the Service, its servers, the content,
+    or e-mails sent from or on behalf of the Company are free of viruses, scripts,
+    trojan horses, worms, malware, timebombs or other harmful components.
+
+
 
     Some
     jurisdictions do not allow the exclusion of certain types of warranties or limitations
@@ -9643,101 +9687,101 @@ MonoBehaviour:
     set forth in this section shall be applied to the greatest extent enforceable
     under applicable law.
 
-    
+
 
     Governing Law
 
-    The laws of the Country,
-    excluding its conflicts of law rules, shall govern this Terms and Your use of
-    the Service. Your use of the Application may also be subject to other local,
-    state, national, or international laws.
+    The laws of the Country, excluding
+    its conflicts of law rules, shall govern this Terms and Your use of the Service.
+    Your use of the Application may also be subject to other local, state, national,
+    or international laws.
 
-    
+
 
     Disputes Resolution
 
-    If
-    You have any concern or dispute about the Service, You agree to first try to
-    resolve the dispute informally by contacting the Company.
+    If You have any concern
+    or dispute about the Service, You agree to first try to resolve the dispute informally
+    by contacting the Company.
 
-    
 
-    For European
-    Union (EU) Users
 
-    If You are a European Union consumer, you will benefit
-    from any mandatory provisions of the law of the country in which You are resident.
+    For European Union (EU) Users
 
-    
+    If You are
+    a European Union consumer, you will benefit from any mandatory provisions of
+    the law of the country in which You are resident.
 
-    United
-    States Legal Compliance
 
-    You represent and warrant that (i) You are not
-    located in a country that is subject to the United States government embargo,
-    or that has been designated by the United States government as a "terrorist supporting"
-    country, and (ii) You are not listed on any United States government list of
-    prohibited or restricted parties.
 
-    
+    United States Legal
+    Compliance
+
+    You represent and warrant that (i) You are not located in a country
+    that is subject to the United States government embargo, or that has been designated
+    by the United States government as a "terrorist supporting" country, and (ii)
+    You are not listed on any United States government list of prohibited or restricted
+    parties.
+
+
 
     Severability and Waiver
 
     Severability
 
-    If
-    any provision of these Terms is held to be unenforceable or invalid, such provision
-    will be changed and interpreted to accomplish the objectives of such provision
-    to the greatest extent possible under applicable law and the remaining provisions
-    will continue in full force and effect.
+    If any provision
+    of these Terms is held to be unenforceable or invalid, such provision will be
+    changed and interpreted to accomplish the objectives of such provision to the
+    greatest extent possible under applicable law and the remaining provisions will
+    continue in full force and effect.
 
-    
+
 
     Waiver
 
-    Except as provided
-    herein, the failure to exercise a right or to require performance of an obligation
-    under these Terms shall not affect a party''s ability to exercise such right
-    or require such performance at any time thereafter nor shall the waiver of a
-    breach constitute a waiver of any subsequent breach.
+    Except as provided herein,
+    the failure to exercise a right or to require performance of an obligation under
+    these Terms shall not affect a party''s ability to exercise such right or require
+    such performance at any time thereafter nor shall the waiver of a breach constitute
+    a waiver of any subsequent breach.
 
-    
 
-    Translation
-    Interpretation
 
-    These Terms and Conditions may have been translated if We
-    have made them available to You on our Service. You agree that the original English
-    text shall prevail in the case of a dispute.
+    Translation Interpretation
 
-    
+    These
+    Terms and Conditions may have been translated if We have made them available
+    to You on our Service. You agree that the original English text shall prevail
+    in the case of a dispute.
 
-    Changes to These Terms
-    and Conditions
 
-    We reserve the right, at Our sole discretion, to modify
-    or replace these Terms at any time. If a revision is material We will make reasonable
-    efforts to provide at least 30 days'' notice prior to any new terms taking effect.
-    What constitutes a material change will be determined at Our sole discretion.
 
-    
+    Changes to These Terms and Conditions
+
+    We
+    reserve the right, at Our sole discretion, to modify or replace these Terms at
+    any time. If a revision is material We will make reasonable efforts to provide
+    at least 30 days'' notice prior to any new terms taking effect. What constitutes
+    a material change will be determined at Our sole discretion.
+
+
+
+    By continuing
+    to access or use Our Service after those revisions become effective, You agree
+    to be bound by the revised terms. If You do not agree to the new terms, in whole
+    or in part, please stop using the website and the Service.
+
+
+
+    Contact Us
+
+    If
+    you have any questions about these Terms and Conditions, You can contact us:
+
+
 
     By
-    continuing to access or use Our Service after those revisions become effective,
-    You agree to be bound by the revised terms. If You do not agree to the new terms,
-    in whole or in part, please stop using the website and the Service.
-
-    
-
-    Contact
-    Us
-
-    If you have any questions about these Terms and Conditions, You can
-    contact us:
-
-    
-
-    By email: f.faizan.bibi@xrehelp.website'
+    email: f.faizan.bibi@xrehelp.website'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aae846498b6431f43ae966c305c9325b, type: 2}
   m_sharedMaterial: {fileID: 3823494130182163443, guid: aae846498b6431f43ae966c305c9325b, type: 2}
@@ -11773,10 +11817,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1631895894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: 0}
-  m_SizeDelta: {x: 213.03, y: 50}
+  m_AnchorMin: {x: 0.59962916, y: 0.2915468}
+  m_AnchorMax: {x: 0.9095366, y: 0.7084532}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960951921
 MonoBehaviour:
@@ -12126,10 +12170,10 @@ RectTransform:
   - {fileID: 1631895894}
   m_Father: {fileID: 206686652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: -0}
-  m_SizeDelta: {x: 1125, y: 750}
+  m_AnchorMin: {x: 0.00044444445, y: 0.6921182}
+  m_AnchorMax: {x: 1.0004444, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &2052543980
 GameObject:
@@ -12555,10 +12599,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1631895894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: 0}
-  m_SizeDelta: {x: 316.32, y: 100}
+  m_AnchorMin: {x: 0.015332377, y: 0.08309361}
+  m_AnchorMax: {x: 0.47550187, y: 0.9169064}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.000015258789, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2110438677
 MonoBehaviour:
@@ -12965,10 +13009,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 9422221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.0028980714, y: 0.016421616}
+  m_AnchorMax: {x: 0.9971019, y: 0.9835784}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -6, y: -6}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131848213
 MonoBehaviour:
@@ -13070,27 +13114,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.81368446
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.27403817
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.03992448
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.09461418
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 870.48
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 134.568
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13122,11 +13166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -82.345
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -611.7554
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13138,6 +13182,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237377353141976977, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9050156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.9479817
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.06924683
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.044587124
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020755431699074878, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9008148899563804205, guid: 40cf55888e81a274bb513776be1195f5, type: 3}
